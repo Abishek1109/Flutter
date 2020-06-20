@@ -9,7 +9,7 @@ class App extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color(0xFFFB415B),
-        fontFamily: "Ubuntu"
+        fontFamily: "Lato"
       ),
       home: LoginPage(),
     );
@@ -45,11 +45,11 @@ class _LoginPageState extends State<LoginPage>{
               style: TextStyle(
                 fontSize: 50.0,
                 fontWeight: FontWeight.bold,
-                fontFamily: "Pacifico"
+                fontFamily: "Lato"
               ),
             ),
         
-            SizedBox(height: 450.0),
+            SizedBox(height: 400.0),
 
              new SizedBox(
   height: 70.0,
@@ -58,17 +58,11 @@ class _LoginPageState extends State<LoginPage>{
             onPressed: () {},
             textColor: Colors.white,
             padding: const EdgeInsets.all(0.0),
+            color: Color.fromARGB(0xFF, 0xea, 0x54, 0x55),
             child: Container(
               decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(23.0),
-        gradient: LinearGradient(
-          colors: [
-            Color(0xFFFB415B),
-            Color(0xFFEE5623)
-          ],
-          begin: Alignment.centerRight,
-          end: Alignment.centerLeft
-        ),
+        //borderRadius: BorderRadius.circular(23.0),
+        
       ),
               padding: const EdgeInsets.all(10.0),
               child: Center(
@@ -77,13 +71,14 @@ class _LoginPageState extends State<LoginPage>{
           style: TextStyle(
             color: Colors.white,
             fontSize: 18.0,
+            fontFamily: "Lato"
           ),
         ),
       ),
             ),
           ),
         ),
-          SizedBox(height: 10.0,),
+          SizedBox(height: 25.0,),
           new SizedBox(
 
   height: 70.0,
@@ -91,25 +86,20 @@ class _LoginPageState extends State<LoginPage>{
             onPressed: () {},
             textColor: Colors.white,
             padding: const EdgeInsets.all(0.0),
+            shape: RoundedRectangleBorder(side: BorderSide(color: Colors.red)),
+            color:  Colors.white,
             child: Container(
               decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(23.0),
-        gradient: LinearGradient(
-          colors: [
-            Color(0xFFFB415B),
-            Color(0xFFEE5623)
-          ],
-          begin: Alignment.centerRight,
-          end: Alignment.centerLeft
-        ),
+        //borderRadius: BorderRadius.circular(23.0),   
       ),
               padding: const EdgeInsets.all(10.0),
               child: Center(
         child: Text(
           "Sign Up",
           style: TextStyle(
-            color: Colors.white,
+            color: Color.fromARGB(0xFF, 0xea, 0x54, 0x55),
             fontSize: 18.0,
+            fontFamily: "Lato",
           ),
         ),
       ),
